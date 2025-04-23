@@ -17,16 +17,12 @@ class BookDetailViewBody extends StatelessWidget {
               children: [
                 CustemBookDetailsAppBar(),
                 BooksDetailsSections(),
-                Expanded(
-                  child: SizedBox(
-                    height: 16,
-                  ),
-                ),
-                SimilarBooksSection()
+                Expanded(child: SizedBox(height: 16)),
+                SimilarBooksSection(),
               ],
             ),
           ),
-        )
+        ),
       ],
     );
   }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CustemSearchTextField extends StatelessWidget {
@@ -7,21 +6,22 @@ class CustemSearchTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-
-
       decoration: InputDecoration(
         enabledBorder: buildOutLineBorder(),
-        focusedBorder:buildOutLineBorder() ,
+        focusedBorder: buildOutLineBorder(),
         hintText: 'search',
-        suffixIcon: IconButton(onPressed: (){}, icon: const Icon(Icons.search),)
+        suffixIcon: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.search),
+        ),
       ),
     );
   }
 }
 
-OutlineInputBorder buildOutLineBorder(){
+OutlineInputBorder buildOutLineBorder() {
   return OutlineInputBorder(
     borderRadius: BorderRadius.circular(16),
-    borderSide: const BorderSide(color: Colors.white,)
+    borderSide: const BorderSide(color: Colors.white),
   );
 }

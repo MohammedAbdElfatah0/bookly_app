@@ -16,33 +16,22 @@ class BooksDetailsSections extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: width * 0.21),
           child: const CustemBookImage(),
         ),
-        const SizedBox(
-          height: 30,
-        ),
-        const Text(
-          'The Jungle Book',
-          style: Styles.textStyle30,
-        ),
-        const SizedBox(
-          height: 4,
-        ),
+        const SizedBox(height: 30),
+        const Text('The Jungle Book', style: Styles.textStyle30),
+        const SizedBox(height: 4),
         Opacity(
           opacity: 0.7,
           child: Text(
             'Rudyard Kipling',
             style: Styles.titleStyle18.copyWith(
-                fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.w500,
+            ),
           ),
         ),
-        const SizedBox(
-          height: 14,
-        ),
-        const BookRating(
-          mainAxisAlignment: MainAxisAlignment.center,
-        ),
-        const SizedBox(
-          height: 30,
-        ),
+        const SizedBox(height: 14),
+        const BookRating(mainAxisAlignment: MainAxisAlignment.center),
+        const SizedBox(height: 30),
         const BooksAction(),
       ],
     );

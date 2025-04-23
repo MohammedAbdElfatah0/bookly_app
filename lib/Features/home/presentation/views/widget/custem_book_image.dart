@@ -14,9 +14,10 @@ class CustemBookImage extends StatelessWidget {
           boxShadow: List.filled(
             5,
             const BoxShadow(
-                color: Color.fromARGB(137, 209, 188, 188),
-                blurRadius: 5,
-                spreadRadius: 0.6),
+              color: Color.fromARGB(137, 209, 188, 188),
+              blurRadius: 5,
+              spreadRadius: 0.6,
+            ),
           ),
           borderRadius: BorderRadius.circular(35),
           border: Border.all(
@@ -25,10 +26,9 @@ class CustemBookImage extends StatelessWidget {
             style: BorderStyle.solid,
           ),
           image: const DecorationImage(
-              image: AssetImage(
-                AssetsData.images,
-              ),
-              fit: BoxFit.fill),
+            image: AssetImage(AssetsData.images),
+            fit: BoxFit.fill,
+          ),
         ),
       ),
     );

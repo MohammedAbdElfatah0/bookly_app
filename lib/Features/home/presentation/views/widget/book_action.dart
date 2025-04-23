@@ -30,7 +30,7 @@ class BooksAction extends StatelessWidget {
               bottomRight: Radius.circular(12),
             ),
           ),
-        )
+        ),
       ],
     );
   }

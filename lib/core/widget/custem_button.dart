@@ -6,7 +6,8 @@ class CustemButton extends StatelessWidget {
     super.key,
     required this.backGroundColor,
     required this.textColor,
-    this.borderRadius, required this.text,
+    this.borderRadius,
+    required this.text,
   });
   final Color backGroundColor;
   final Color textColor;
@@ -17,16 +18,21 @@ class CustemButton extends StatelessWidget {
     return SizedBox(
       height: 48,
       child: TextButton(
-          onPressed: () {},
-          style: TextButton.styleFrom(
-              shape: RoundedRectangleBorder(
-                  borderRadius: borderRadius ?? BorderRadius.circular(12)),
-              backgroundColor: backGroundColor),
-          child: Text(
-            text,
-            style: Styles.titleStyle18
-                .copyWith(color: textColor, fontWeight: FontWeight.bold),
-          )),
+        onPressed: () {},
+        style: TextButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: borderRadius ?? BorderRadius.circular(12),
+          ),
+          backgroundColor: backGroundColor,
+        ),
+        child: Text(
+          text,
+          style: Styles.titleStyle18.copyWith(
+            color: textColor,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
     );
   }
 }

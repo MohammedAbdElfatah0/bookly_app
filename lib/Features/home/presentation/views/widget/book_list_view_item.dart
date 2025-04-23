@@ -25,16 +25,13 @@ class BookListViewItem extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   image: const DecorationImage(
-                      image: AssetImage(
-                        AssetsData.images,
-                      ),
-                      fit: BoxFit.fill),
+                    image: AssetImage(AssetsData.images),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
-            const SizedBox(
-              height: 30,
-            ),
+            const SizedBox(height: 30),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,30 +45,24 @@ class BookListViewItem extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  const SizedBox(
-                    height: 3,
-                  ),
-                  const Text(
-                    'J.K.Rowling',
-                    style: Styles.textStyle14,
-                  ),
-                  const SizedBox(
-                    height: 3,
-                  ),
+                  const SizedBox(height: 3),
+                  const Text('J.K.Rowling', style: Styles.textStyle14),
+                  const SizedBox(height: 3),
                   Row(
                     children: [
                       Text(
                         '19.99\$',
-                        style: Styles.textStyle20
-                            .copyWith(fontWeight: FontWeight.bold),
+                        style: Styles.textStyle20.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       const Spacer(),
-                      const BookRating()
+                      const BookRating(),
                     ],
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
