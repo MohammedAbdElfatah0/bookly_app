@@ -13,7 +13,7 @@ class CustemAppBar extends StatelessWidget {
       padding: const EdgeInsets.only(top: 15, bottom: 25),
       child: Row(
         children: [
-          Image.asset(AssetsData.images, height: 26),
+          Image.asset(AssetsData.logo, height: 26),
           const Spacer(),
           IconButton(
             onPressed: () {
