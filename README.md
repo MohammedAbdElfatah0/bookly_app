@@ -1,16 +1,30 @@
-# bookly_app
+# 📚 Bookly App
 
-A new Flutter project.
+Bookly is a Flutter-based mobile application designed to explore and read books.  
+It's currently under development and follows **MVVM architecture** with clean and maintainable code structure.
 
-## Getting Started
+## ✨ Features (so far)
+- 📱 Beautiful & responsive UI
+- 🔁 Integration with a books API (Google Books API)
+- 🧱 MVVM structure (Model-View-ViewModel)
+- 📦 Models built for parsing JSON data
+- 💡 Clean separation of logic and UI
 
-This project is a starting point for a Flutter application.
+## 🚧 Still in Progress...
+This project is actively being developed. More features will be added soon, including:
+- Book details screen
+- Search functionality
+- Bookmarking and reading list
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Screenshots
+nan
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Getting Started
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To run the app locally:
+
+```bash
+git clone https://github.com/MohammedAbdElfatah0/bookly_app.git
+cd bookly_app
+flutter pub get
+flutter run
