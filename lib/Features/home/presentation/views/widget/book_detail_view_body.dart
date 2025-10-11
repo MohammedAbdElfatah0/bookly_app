@@ -14,6 +14,7 @@ class BookDetailViewBody extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 30),
             child: Column(
+              spacing: 15,
               children: [
                 CustemBookDetailsAppBar(),
                 BooksDetailsSections(),
