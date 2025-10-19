@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'custem_book_image.dart';
+import 'custom_book_image.dart';
 
 class SimilarBookListView extends StatelessWidget {
   const SimilarBookListView({super.key});
@@ -13,7 +13,9 @@ class SimilarBookListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return const Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
-            child: CustemBookImage(),
+            child: CustomBookImage(
+              imageUrl: 'https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80',
+            ),
           );
         },
       ),

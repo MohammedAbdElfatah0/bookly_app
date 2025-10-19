@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 import 'book_action.dart';
 import 'book_rating.dart';
-import 'custem_book_image.dart';
+import 'custom_book_image.dart';
 
 class BooksDetailsSections extends StatelessWidget {
   const BooksDetailsSections({super.key});
@@ -14,7 +14,9 @@ class BooksDetailsSections extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.21),
-          child: const CustemBookImage(),
+          child: const CustomBookImage(
+            imageUrl: "https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80",
+          ),
         ),
         const SizedBox(height: 30),
         const Text('The Jungle Book', style: Styles.textStyle30),
