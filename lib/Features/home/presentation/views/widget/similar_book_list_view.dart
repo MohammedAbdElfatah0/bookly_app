@@ -14,15 +14,18 @@ class SimilarBookListView extends StatelessWidget {
       builder: (context, state) {
         if (state is SimilarBooksSuccess) {
           return SizedBox(
-            height: MediaQuery.of(context).size.height * 0.15,
+            height: MediaQuery.of(context).size.height * 0.2,
             child: ListView.builder(
+              physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
+              itemCount: state.books.length,
               itemBuilder: (context, index) {
-                return const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                return Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: CustomBookImage(
                     imageUrl:
-                        'https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80',
+                        state.books[index].volumeInfo!.imageLinks?.thumbnail! ??
+                        "",
                   ),
                 );
               },
