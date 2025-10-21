@@ -15,7 +15,8 @@ class BooksDetailsSections extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.21),
           child: const CustomBookImage(
-            imageUrl: "https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80",
+            imageUrl:
+                "https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80",
           ),
         ),
         const SizedBox(height: 30),
@@ -32,7 +33,11 @@ class BooksDetailsSections extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 14),
-        const BookRating(mainAxisAlignment: MainAxisAlignment.center),
+        const BookRating(
+          count: 5,
+          rating: 4.99,
+          mainAxisAlignment: MainAxisAlignment.center,
+        ),
         const SizedBox(height: 30),
         const BooksAction(),
       ],
