@@ -3,7 +3,7 @@ import 'package:bookly_app/core/widget/custom_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../manger/newsets_books/newsets_books_cubit.dart';
+import '../../manger/new_sets_books/new_sets_books_cubit.dart';
 import 'book_list_view_item.dart';
 
 class BestSellerListViewBuilderItem extends StatelessWidget {

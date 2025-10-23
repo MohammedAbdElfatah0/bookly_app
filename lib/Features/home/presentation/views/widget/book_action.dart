@@ -4,7 +4,7 @@ import 'package:bookly_app/Features/home/data/models/book_model/book_model.dart'
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../../../core/widget/custem_button.dart';
+import '../../../../../core/widget/custom_button.dart';
 
 class BooksAction extends StatelessWidget {
   const BooksAction({super.key, required this.bookModel});
@@ -13,7 +13,7 @@ class BooksAction extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
+        const Expanded(
           child: CustomButton(
             text: 'Free',
             backGroundColor: Colors.white,
@@ -39,7 +39,7 @@ class BooksAction extends StatelessWidget {
             text: 'free preview',
             backGroundColor: Colors.orange,
             textColor: Colors.white,
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topRight: Radius.circular(12),
               bottomRight: Radius.circular(12),
             ),

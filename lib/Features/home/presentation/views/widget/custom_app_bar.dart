@@ -4,8 +4,8 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../../core/utils/assets_data.dart';
 
-class CustemAppBar extends StatelessWidget {
-  const CustemAppBar({super.key});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
