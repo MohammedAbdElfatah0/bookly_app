@@ -15,12 +15,12 @@ class FeaturedBookLoading extends FeaturedBookState {}
 class FeaturedBookFailure extends FeaturedBookState {
   final String errMessage;
 
-  FeaturedBookFailure({required this.errMessage});
+  const FeaturedBookFailure({required this.errMessage});
 
 }
 
 class FeaturedBookSuccess extends FeaturedBookState {
   final List<BookModel>books;
 
-  FeaturedBookSuccess(this.books);
+  const FeaturedBookSuccess(this.books);
 }

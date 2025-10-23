@@ -14,7 +14,7 @@ class BooksAction extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: CustemButton(
+          child: CustomButton(
             text: 'Free',
             backGroundColor: Colors.white,
             textColor: Colors.black,
@@ -25,12 +25,12 @@ class BooksAction extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: CustemButton(
+          child: CustomButton(
             onPressed: () async {
               final Uri url = Uri.parse(bookModel.volumeInfo!.previewLink!);
               final bool launched = await launchUrl(
                 url,
-                mode: LaunchMode.externalApplication, 
+                mode: LaunchMode.externalApplication,
               );
               if (!launched) {
                 log("❌ Could not launch $url");

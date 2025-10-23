@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustemSearchTextField extends StatelessWidget {
-  const CustemSearchTextField({super.key});
+class CustomSearchTextField extends StatelessWidget {
+  const CustomSearchTextField({super.key});
 
   @override
   Widget build(BuildContext context) {
