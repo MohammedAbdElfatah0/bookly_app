@@ -9,9 +9,9 @@ class SreachBookCubit extends Cubit<SreachBookState> {
   SreachBookCubit(this.homeRepo) : super(SreachBookInitial());
 
   final HomeRepo homeRepo;
-  Future<void> fetchSimilarBooks({required String category}) async {
+  Future<void> fetchSearchBooks({required String text}) async {
     emit(SreachBooksLoading());
-    var result = await homeRepo.fetchSimilarBooks(category: category);
+    var result = await homeRepo.fetchSearchBooks(searchText: text);
     result.fold(
       (failure) {
         emit(SreachBooksFailure(failure.errMessage));

@@ -32,6 +32,7 @@ class BookManagerApp extends StatelessWidget {
                   NewSetBooksCubit(getIt.get<HomeRepoImpl>())
                     ..fetchNewSetBooks(),
         ),
+
       ],
       child: MaterialApp.router(
         routerConfig: AppRouter.router,
