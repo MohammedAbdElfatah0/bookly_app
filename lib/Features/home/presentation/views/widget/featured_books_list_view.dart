@@ -19,7 +19,7 @@ class FeaturedBooksListView extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.34,
             child: ListView.builder(
               physics: const BouncingScrollPhysics(),
-              itemCount: state.books.length,
+              itemCount: (state.books.length ~/ 2).round(),
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Padding(
@@ -33,7 +33,12 @@ class FeaturedBooksListView extends StatelessWidget {
                     },
                     child: CustomBookImage(
                       imageUrl:
-                          state.books[index].volumeInfo!.imageLinks!.thumbnail!,
+                          state
+                              .books[index]
+                              .volumeInfo
+                              ?.imageLinks
+                              ?.thumbnail ??
+                          '',
                     ),
                   ),
                 );
