@@ -1,5 +1,4 @@
 import 'package:bookly_app/Features/home/presentation/views/widget/book_list_view_item.dart';
-import 'package:bookly_app/Features/home/presentation/views/widget/custom_book_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
